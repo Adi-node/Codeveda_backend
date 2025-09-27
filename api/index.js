@@ -29,7 +29,8 @@ app.use(helmet({
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? [
-        process.env.FRONTEND_URL || 'https://your-frontend.vercel.app',
+        'https://codeveda-frontend.vercel.app',
+        process.env.FRONTEND_URL || 'https://codeveda-frontend.vercel.app',
         'https://*.vercel.app',
         /https:\/\/.*\.vercel\.app$/
       ]
